@@ -1,6 +1,6 @@
-from distutils.core import setup
+import setuptools
 
-setup(
+setuptools.setup(
     name='loggersdk',
     version='2.0',
     description='Python library to connect to the HP Arcsight Logger REST API',
@@ -12,4 +12,5 @@ setup(
     keywords=['arcsight', 'logger', 'rest', 'sdk'],
     py_modules=['loggersdk'],
     install_requires=['requests'],
+    include_package_data=True,
 )
