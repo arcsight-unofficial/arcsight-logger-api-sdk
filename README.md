@@ -23,8 +23,6 @@ There is now new unofficial documentation for utilizing the ArcSight Logger API:
 
 [ArcSight Logger API SDK implementation example](https://github.com/arcsight-unofficial/arcsight-logger-api-sdkexample)
 
-[ArcSight Logger API SDK](https://github.com/arcsight-unofficial/arcsight-logger-api-sdk)
-
 ### Optional Parameters for API requests:
 Only the mandatory options is implemented for each function call, all optional arguments for each API call can be found in the above web based documentation and can be supplied as the last arguments when creating an instance of the function.
 This is because each function with optional parameters also accepts unlimited kwargs as the last scope item.
