@@ -32,7 +32,7 @@ def post(host, url, data, verify=False, disable_warning=True):
         response.raise_for_status()
         if response.status_code == 200:
             if response.text:
-                response = json.loads(response.text)
+                response = json.loads(response.text, strict=False)
         else:
             response = response.text
     except requests.exceptions.HTTPError as err:
