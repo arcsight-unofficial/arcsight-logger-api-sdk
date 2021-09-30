@@ -148,9 +148,9 @@ def wait(host, authtoken, search_id):
 
     """
     response = status(host, authtoken, search_id)
-    while response['status'] != 'complete' or response['status'] != 'error':
+    while response['status'] != 'complete' and response['status'] != 'error':
         response = status(host, authtoken, search_id)
-        if response['status'] != 'complete' or response['status'] != 'error':
+        if response['status'] != 'complete' and response['status'] != 'error':
             time.sleep(5.0)
     return response
 
